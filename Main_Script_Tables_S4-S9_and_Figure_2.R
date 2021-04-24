@@ -34,15 +34,15 @@ PAR2 <- expand.grid(birth = c(0.1),
 PAR <- rbind(PAR1, PAR2)
 PAR
 
-## Run the simulation and salve the NRMSE in .csv file
+## Run the simulation and save the NRMSE in .csv file
 
-# Create directory to salve the results
+# Create directory to save the results
 dir.create("Results")
 
-# Set main parameters to simulation
+# Set main parameters to the simulation
 # This can take a long time to finish
 
-# Set main parameters to simulation
+# Set main parameters to the simulation
 n.rep <- 1000 # Number of repetition
 parallel <- NULL # Number of parallel processes, it depends on the computer that running the analysis
 
@@ -131,7 +131,7 @@ require(plotrix)
 
 
 ## Plot function
-# This function include a lot of options and arguments to produce the figure 2
+# This function includes a lot of options and arguments to produce the figure 2
 f.plot.2 <- function(results.temp, legend = FALSE, xlab = FALSE, ylab = FALSE, lim.y = 1.25, opt.adj = 0.05, leg.adj = 1.3){
 	x <- as.numeric(as.factor(results.temp$noNA))
 	adj <- as.numeric(as.factor(results.temp$lambda))*0.1
