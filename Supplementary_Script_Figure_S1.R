@@ -19,7 +19,7 @@ PAR
 ## Run the simulation 
 
 # Set main parameters to simulation
-n.rep <- 1000 # Number of repetition
+n.rep <- 1000 # Number of repetitions
 
 RESULTS.pvr <- RUN.PVR(PAR, n.rep = n.rep)
 
